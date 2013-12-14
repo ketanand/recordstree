@@ -92,7 +92,143 @@
 
         </header>   
         <!-- EOF: header -->
+	            <!-- #banner -->
+            <div id="banner" class="container">
 
+                <?php if ($page['banner']) : ?>
+                <!-- #banner-inside -->
+                <div id="banner-inside">
+                <?php print render($page['banner']); ?>
+                </div>
+                <!-- EOF: #banner-inside -->        
+                <?php endif; ?>
+
+                <?php if (theme_get_setting('slideshow_display','simplecorp')): ?>
+
+					<?php if ($is_front): ?>
+                    <!-- #slider-container-1 -->
+                    <div id="slider-container-1">
+                        <div class="flexslider loading">
+                            <ul id="slides" class="slides">
+    
+                                <!-- first-slide -->
+                                <li class="slider-item">
+                                    <div class="slider-image">
+                                        <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="flex-caption">
+                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                    </div>
+                                </li>
+    
+                                <!-- second-slide -->
+                                <li class="slider-item">
+                                    <div class="slider-image">                        
+                                        <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img2.jpg" alt="" /></a>
+                                    </div>                        
+                                    <div class="flex-caption">
+                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                    </div>
+                                </li>
+    
+                                <!-- third-slide -->
+                                <li class="slider-item">
+                                    <div class="slider-image">                            
+                                        <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="flex-caption">
+                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                    </div>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- EOF: #slider-container-1 -->
+                    <!-- #slider-container-2 -->
+                    <div id="slider-container-2">
+                        <div class="flexslider loading">
+                            <ul id="slides" class="slides">
+    
+                                <!-- first-slide -->
+                                <li class="slider-item">
+                                    <div class="slider-image">
+                                        <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="flex-caption">
+                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                    </div>
+                                </li>
+    
+                                <!-- second-slide -->
+                                <li class="slider-item">
+                                    <div class="slider-image">                        
+                                        <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img2.jpg" alt="" /></a>
+                                    </div>                        
+                                    <div class="flex-caption">
+                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                    </div>
+                                </li>
+    
+                                <!-- third-slide -->
+                                <li class="slider-item">
+                                    <div class="slider-image">                            
+                                        <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="flex-caption">
+                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                    </div>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- EOF: #slider-container-2 -->
+                    <!-- #slider-container-3 -->
+                    <div id="slider-container-3">
+                        <div class="flexslider loading">
+                            <ul id="slides" class="slides">
+    
+                                <!-- first-slide -->
+                                <li class="slider-item">
+                                    <div class="slider-image">
+                                        <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="flex-caption">
+                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                    </div>
+                                </li>
+    
+                                <!-- second-slide -->
+                                <li class="slider-item">
+                                    <div class="slider-image">                        
+                                        <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img2.jpg" alt="" /></a>
+                                    </div>                        
+                                    <div class="flex-caption">
+                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                    </div>
+                                </li>
+    
+                                <!-- third-slide -->
+                                <li class="slider-item">
+                                    <div class="slider-image">                            
+                                        <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="flex-caption">
+                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                    </div>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- EOF: #slider-container-1 -->
+                    <?php endif; ?>
+
+                <?php endif; ?>
+            
+            </div>
+            <!-- EOF: #banner -->
         <div id="content" class="clearfix">
 
             <?php if ($page['top_content']): ?>
@@ -107,66 +243,6 @@
             <!--EOF: #top-content -->
             <?php endif; ?>
             
-            <!-- #banner -->
-            <div id="banner" class="container">
-
-                <?php if ($page['banner']) : ?>
-                <!-- #banner-inside -->
-                <div id="banner-inside">
-                <?php print render($page['banner']); ?>
-                </div>
-                <!-- EOF: #banner-inside -->        
-                <?php endif; ?>
-
-                <?php if (theme_get_setting('slideshow_display','simplecorp')): ?>
-
-					<?php if ($is_front): ?>
-                    <!-- #slider-container -->
-                    <div id="slider-container">
-                        <div class="flexslider loading">
-                            <ul class="slides">
-    
-                                <!-- first-slide -->
-                                <li class="slider-item">
-                                    <div class="slider-image">
-                                        <a href="<?php print base_path();?>"><img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img1.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
-                                    </div>
-                                </li>
-    
-                                <!-- second-slide -->
-                                <li class="slider-item">
-                                    <div class="slider-image">                        
-                                        <a href="<?php print base_path();?>"><img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img2.jpg" alt="" /></a>
-                                    </div>                        
-                                    <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
-                                    </div>
-                                </li>
-    
-                                <!-- third-slide -->
-                                <li class="slider-item">
-                                    <div class="slider-image">                            
-                                        <a href="<?php print base_path();?>"><img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img3.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
-                                    </div>
-                                </li>
-    
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- EOF: #slider-container -->
-                    <?php endif; ?>
-
-                <?php endif; ?>
-            
-            </div>
-            <!-- EOF: #banner -->
-
             <?php if (theme_get_setting('breadcrumb_display','simplecorp') || $messages): ?>
             <!--breadrumb & messages -->
             <div class="container clearfix">
