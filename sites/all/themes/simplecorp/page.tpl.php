@@ -45,7 +45,7 @@
                     <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
                     <?php endif; ?>
 
-                    <?php if ($site_name || $site_slogan): ?>
+                    <?php /*if ($site_name || $site_slogan): ?>
                         <!-- #name-and-slogan -->
                         <hgroup id="name-and-slogan">
 							<?php if ($site_name):?>
@@ -57,7 +57,7 @@
                             <?php endif; ?>
                         </hgroup> 
                         <!-- EOF:#name-and-slogan -->
-                    <?php endif; ?>
+                    <?php endif; */?>
 
                 </div>
                 <!--EOF: #header-left -->     
