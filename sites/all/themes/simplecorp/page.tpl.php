@@ -131,7 +131,7 @@
                                         <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img1.jpg" alt="" /></a>
                                     </div>
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>Records Tree Indian Alternative Music Awards.</h3>
                                     </div>
                                 </li>
     
@@ -141,7 +141,7 @@
                                         <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img2.jpg" alt="" /></a>
                                     </div>                        
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>Check out latest Indian Ocean Album..</h3>
                                     </div>
                                 </li>
     
@@ -170,7 +170,7 @@
                                         <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img1.jpg" alt="" /></a>
                                     </div>
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>Records Tree Indian Alternative Music Awards.</h3>
                                     </div>
                                 </li>
     
@@ -180,7 +180,7 @@
                                         <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img2.jpg" alt="" /></a>
                                     </div>                        
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>Check out latest Indian Ocean Album..</h3>
                                     </div>
                                 </li>
     
@@ -209,7 +209,7 @@
                                         <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img1.jpg" alt="" /></a>
                                     </div>
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>Records Tree Indian Alternative Music Awards.</h3>
                                     </div>
                                 </li>
     
@@ -219,7 +219,7 @@
                                         <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img2.jpg" alt="" /></a>
                                     </div>                        
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>Check out latest Indian Ocean Album..</h3>
                                     </div>
                                 </li>
     
@@ -281,9 +281,9 @@
                           
                         <!--featured-item -->
                         <div class="one-half">
-                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-01.png" class="img-align-left" alt="" />
-                            <h3>Awesome Features</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/advaita.jpg" width="280px" class="img-align-left" alt="" />
+                            <h3>Advaita Plays at saarc</h3>
+                            <p>Fusion band Advaita played at the saarc festival in front of packed crowds.</p>
                             <div class="readmore">
                                 <a href="#">Read More</a>
                             </div>
@@ -292,9 +292,9 @@
     
                         <!--featured-item -->
                         <div class="one-half last">
-                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-02.png" class="img-align-left" alt="" />
-                            <h3>Browser Compatibility</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/college.jpg" width="280px" class="img-align-left" alt="" />
+                            <h3>College Euphoria</h3>
+                            <p>Music on the rise...</p>
                             <div class="readmore">
                                 <a href="#">Read More</a>
                             </div>
@@ -307,9 +307,9 @@
     
                         <!--featured-item -->
                         <div class="one-half">
-                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-03.png" class="img-align-left" alt="" />
-                            <h3>Works on Mobile Devices</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/blore.jpeg" class="img-align-left" width="280px" alt="" />
+                            <h3>Rock Buzz in guzzler town</h3>
+                            <p>Ever expanding rock scene in India's pub capital..</p>
                             <div class="readmore">
                                 <a href="#">Read More</a>
                             </div>
@@ -318,9 +318,9 @@
     
                         <!--featured-item -->
                         <div class="one-half last">
-                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-04.png" class="img-align-left" alt="" />
-                            <h3>Full Documentation</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/records.jpg" width="280px" class="img-align-left" alt="" />
+                            <h3>Records Tree World tour 2020</h3>
+                            <p>Check out the videos and behind the scene fun..</p>
                             <div class="readmore">
                                 <a href="#">Read More</a>
                             </div>
@@ -399,7 +399,7 @@
                         
 					<?php if ($is_front): ?>  
                     
-                    <h3>Some of Our Featured Projects</h3>
+                    <h3>This weeks Featured Videos!</h3>
                     
                     <ul id="projects-carousel" class="loading">
     
