@@ -28,13 +28,22 @@ $page['charts_highlights'] = array(
 				);
 ?>
 
+<!-- fb sdk -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div id="page-wrapper">
 
     <!-- #page -->
     <div id="page">
         
         <!-- header -->
-        <header role="header" class="container clearfix">
+        <header id="header-wrapper" role="header" class="container clearfix">
         
             <!-- #pre-header -->
             <div id="pre-header" class="clearfix">
@@ -45,17 +54,22 @@ $page['charts_highlights'] = array(
 
                 <?php if (theme_get_setting('social_icons_display','simplecorp')): ?>   
                     <!-- #social-icons -->
+		    <div class="fb-like" data-href="https://www.facebook.com/recordstree" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+		    <div id="twitter-follow" >
+			    <a href="https://twitter.com/RecordsTree" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @RecordsTree</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		    </div>
                     <div id="social-icons" class="clearfix">
                         <ul id="social-links">
-                            <li class="facebook-link"><a href="https://www.facebook.com/morethan.just.themes" class="facebook" id="social-01" title="Join Us on Facebook!">Facebook</a></li>
-                            <li class="twitter-link"><a href="https://twitter.com/morethanthemes" class="twitter" id="social-02" title="Follow Us on Twitter">Twitter</a></li>
+                            <li class="facebook-link"><a href="https://www.facebook.com/recordstree" class="facebook" id="social-01" title="Join Us on Facebook!">Facebook</a></li>
+                            <li class="twitter-link"><a href="https://twitter.com/recordstree" class="twitter" id="social-02" title="Follow Us on Twitter">Twitter</a></li>
                             <li class="google-link"><a href="#" id="social-03" title="Google" class="google">Google</a></li>
-                            <li class="dribbble-link"><a href="#" id="social-04" title="Dribble" class="dribbble">Dribble</a></li>
+                            <!--li class="dribbble-link"><a href="#" id="social-04" title="Dribble" class="dribbble">Dribble</a></li>
                             <li class="vimeo-link"><a href="#" id="social-05" title="Vimeo" class="vimeo">Vimeo</a></li>
                             <li class="skype-link"><a href="#" id="social-06" title="Skype" class="skype">Skype</a></li>
                             <li class="linkedin-link"><a href="#" id="social-07" title="Linkedin" class="linkedin">Linkedin</a></li>
                             <li class="pinterest-link"><a href="#" id="social-09" title="Pinterest" class="pinterest">Pinterest</a></li>
-                            <li class="rss-link"><a href="#" id="social-08" title="RSS" class="rss">RSS Feeds</a></li>
+                            <li class="rss-link"><a href="#" id="social-08" title="RSS" class="rss">RSS Feeds</a></li-->
                         </ul>
                     </div>
                     <!-- EOF: #social-icons -->
@@ -146,7 +160,7 @@ $page['charts_highlights'] = array(
                                         <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img1.jpg" alt="" /></a>
                                     </div>
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>Records Tree Indian Alternative Music Awards.</h3>
                                     </div>
                                 </li>
     
@@ -156,7 +170,7 @@ $page['charts_highlights'] = array(
                                         <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img2.jpg" alt="" /></a>
                                     </div>                        
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>Check out latest Indian Ocean Album..</h3>
                                     </div>
                                 </li>
     
@@ -185,7 +199,7 @@ $page['charts_highlights'] = array(
                                         <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img1.jpg" alt="" /></a>
                                     </div>
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>Records Tree Indian Alternative Music Awards.</h3>
                                     </div>
                                 </li>
     
@@ -195,7 +209,7 @@ $page['charts_highlights'] = array(
                                         <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img2.jpg" alt="" /></a>
                                     </div>                        
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>Check out latest Indian Ocean Album..</h3>
                                     </div>
                                 </li>
     
@@ -224,7 +238,7 @@ $page['charts_highlights'] = array(
                                         <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img1.jpg" alt="" /></a>
                                     </div>
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>Records Tree Indian Alternative Music Awards.</h3>
                                     </div>
                                 </li>
     
@@ -234,7 +248,7 @@ $page['charts_highlights'] = array(
                                         <a href="<?php print base_path();?>"><img width='393' src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/img2.jpg" alt="" /></a>
                                     </div>                        
                                     <div class="flex-caption">
-                                        <h3>Quisque eu nibh enim, ac aliquam nunc.</h3>
+                                        <h3>Check out latest Indian Ocean Album..</h3>
                                     </div>
                                 </li>
     
@@ -292,7 +306,8 @@ $page['charts_highlights'] = array(
                           
                         <!--featured-item -->
                         <div class="one-half">
-                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-01.png" class="img-align-left" alt="" />
+
+                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/advaita.jpg" class="img-align-left" alt="" />
                             <div class="readmore">
                                 <a href="#">Read More</a>
                             </div>
@@ -301,8 +316,8 @@ $page['charts_highlights'] = array(
     
                         <!--featured-item -->
                         <div class="one-half last">
-                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-02.png" class="img-align-left" alt="" />
-                            <div class="readmore">
+                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/college.jpg" class="img-align-left" alt="" />
+		            <div class="readmore">
                                 <a href="#">Read More</a>
                             </div>
                         </div>
@@ -314,7 +329,7 @@ $page['charts_highlights'] = array(
     
                         <!--featured-item -->
                         <div class="one-half">
-                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-03.png" class="img-align-left" alt="" />
+			<img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/blore.jpeg" class="img-align-left" alt="" />
                             <div class="readmore">
                                 <a href="#">Read More</a>
                             </div>
@@ -323,7 +338,7 @@ $page['charts_highlights'] = array(
     
                         <!--featured-item -->
                         <div class="one-half last">
-                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-04.png" class="img-align-left" alt="" />
+                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/records.jpg" class="img-align-left" alt="" />
                             <div class="readmore">
                                 <a href="#">Read More</a>
                             </div>
@@ -432,7 +447,7 @@ $page['charts_highlights'] = array(
                         
 					<?php if ($is_front): ?>  
                     
-                    <h3>Some of Our Featured Projects</h3>
+                    <h3>This weeks Featured Videos!</h3>
                     
                     <ul id="projects-carousel" class="loading">
     

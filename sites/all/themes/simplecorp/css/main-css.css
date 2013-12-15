@@ -95,7 +95,7 @@ img { max-width: 100%; height: auto;
 /* ---------------------------------------------------------------------- */
 /* 03-   PRE HEADER CONTENT 
 /* ---------------------------------------------------------------------- */
-#pre-header { background: #9dcedf; float: left; width: 940px; padding: 0 40px 0 40px; margin: 0px 0 30px -40px; border-bottom: 1pt solid #d8d5cd; min-height: 50px; }
+#pre-header { background: #9dcedf; float: left; width: 100%; padding: 0 40px 0 40px; margin: 0px 0 30px -40px; border-bottom: 1pt solid #d8d5cd; min-height: 50px; }
 
 .pre-header { margin-bottom: 13px; }
 
@@ -375,6 +375,16 @@ ul#social-links > li.pinterest-link:hover {
 #page { height: auto; background: #FFF; 
          padding: 0px; }
 
+#header-wrapper { width:100% }
+
+.fb-like { float: left;
+    margin-left: 23px;
+    margin-top: 16px; }
+
+#twitter-follow { float:left;
+		  margin-top : 16px;
+		  margin-left : 10px }
+
 #pre-header .content a:hover { text-decoration: underline; }
 
 #pre-header h2 { color: #fff; text-shadow:0px 1px #81BCD1; }
@@ -395,7 +405,7 @@ ul#social-links > li.pinterest-link:hover {
 
 .front #header {border-bottom: 1pt solid #D8D5CD;}
 
-#header-right {width : 100%; float:right;  padding-top: 30px;}
+#header-right {width : 100%; float:right;  padding-top: 30px; width: 100%;}
 
 #navigation-wrapper { /*float: right;*/ }
 
@@ -407,7 +417,7 @@ ul#social-links > li.pinterest-link:hover {
 
 .front #content{ margin-top: 0px; }
 
-#header-left { float: left;text-align:center }
+#header-left { float: left;text-align:center; width: 100%; }
 
 h1#site-name{ font-size: 18px; margin:0 0 12px 0; line-height: 27px;}
 
@@ -428,11 +438,12 @@ h2#site-slogan{ color: #dbdbdb; margin:0 0 16px 0; font-size: 16px; line-height:
 
 .one-third,.two-third,.one-fourth,.three-fourth,.one-column { /*float: left;*/ margin-right: 0px; margin-bottom: 0px; }
 .one-half { float: left; margin-right: 0px; margin-bottom: 0px; }
+
 .one-half.last,.one-third.last,.two-third.last,.one-fourth.last,.three-fourth.last, .one-fourth.widget-4, .one-fourth.widget-8, .one-fourth.widget-12 { margin-right: 0px; }
 
 .one-half { width: 320px; }
 
-.one-third { width: 100%; }
+.one-third { width: 410px; }
 
 .two-third { width: 820px; }
 
@@ -453,7 +464,7 @@ h2#site-slogan{ color: #dbdbdb; margin:0 0 16px 0; font-size: 16px; line-height:
 
 #main-navigation li.last { clear:none; }
 
-#main-navigation > ul.menu, #main-navigation .content > ul.menu, #main-navigation ul.sf-menu { margin: -30px 0 0 0px; clear:both; }
+#main-navigation > ul.menu, #main-navigation .content > ul.menu, #main-navigation ul.sf-menu { margin: -30px 160px 0 150px; clear:both; }
 
 #main-navigation > ul.menu:after, #main-navigation .content > ul.menu:after, #main-navigation ul.sf-menu:after, #main-navigation .content:after { content: "."; display: block; clear: both; 
 visibility: hidden; line-height: 0; height: 0; }    
