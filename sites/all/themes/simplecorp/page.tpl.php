@@ -1,4 +1,33 @@
 <!-- #page-wrapper -->
+<?php 
+$page['charts_highlights'] = array(
+					'0' => array(
+							'chart' => 'Bollywood',
+							'chart_link' => '/bollywood',
+							'chart_position' => '12',
+							'track_behaviour' => 'loss',
+							'track_title' => 'Tum Hi Ho',
+							'track_artist' => 'Arijit Singh'
+						    ),		
+					'1' => array(
+							'chart' => 'Fusion',
+							'chart_link' => '/fusion',
+							'chart_position' => '3',
+							'track_behaviour' => 'gain',
+							'track_title' => 'Jhankaar',
+							'track_artist' => 'Foonkh'
+						    ),	
+					'2' => array(
+							'chart' => 'Punjabi',
+							'chart_link' => '/punjabi',
+							'chart_position' => '1',
+							'track_behaviour' => 'same',
+							'track_title' => 'Blue Eyes',
+							'track_artist' => 'Honey Singh'
+						    ),	
+				);
+?>
+
 <div id="page-wrapper">
 
     <!-- #page -->
@@ -253,23 +282,17 @@
             <?php endif; ?>
 
             <!--#featured -->
-            <div id="featured"> 
-
-                <?php if ($page['highlighted']): ?>
-                <div class="container clearfix"><?php print render($page['highlighted']); ?></div>
-                <?php endif; ?>
-
+            <div id="featured" class="featured"> 
+		<div id="featured-content" class="featured-content">
                 <?php if (theme_get_setting('highlighted_display','simplecorp')): ?>
                         
 					<?php if ($is_front): ?>  
     
-                    <div class="container clearfix">
+                    <div class="container-featured-content clearfix">
                           
                         <!--featured-item -->
                         <div class="one-half">
                             <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-01.png" class="img-align-left" alt="" />
-                            <h3>Awesome Features</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                             <div class="readmore">
                                 <a href="#">Read More</a>
                             </div>
@@ -279,8 +302,6 @@
                         <!--featured-item -->
                         <div class="one-half last">
                             <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-02.png" class="img-align-left" alt="" />
-                            <h3>Browser Compatibility</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                             <div class="readmore">
                                 <a href="#">Read More</a>
                             </div>
@@ -289,13 +310,11 @@
     
                     </div> 
                   
-                    <div class="container clearfix">
+                    <div class="container-featured-content clearfix">
     
                         <!--featured-item -->
                         <div class="one-half">
                             <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-03.png" class="img-align-left" alt="" />
-                            <h3>Works on Mobile Devices</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                             <div class="readmore">
                                 <a href="#">Read More</a>
                             </div>
@@ -305,25 +324,53 @@
                         <!--featured-item -->
                         <div class="one-half last">
                             <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-04.png" class="img-align-left" alt="" />
-                            <h3>Full Documentation</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                             <div class="readmore">
                                 <a href="#">Read More</a>
                             </div>
                         </div>
-                        <!--EOF: featured-item -->   
-                    
-                    <div class="horizontal-line"> </div>
-    
+                        <!--EOF: featured-item -->       
                     </div>
                        
                     <?php endif; ?>
 
                 <?php endif; ?>  
+		</div>
+		<!-- #featured-content -->
 
+		<!-- #charts-highlights-->
+	    <div class ="charts-highlights container">	
+	    <?php if($page['charts_highlights']) :?>
+	    <h3> Charts Highlights </h3> 	
+	    <?php foreach($page['charts_highlights'] as $highlight) :?>		
+            <div class="chart-highlights-container">
+		<div id="chart-ajax">
+			<section class="portion_chart_summary" style="display: block;">
+			
+			<div class="chart-highlight-left">
+			<span class="chart-place-<?php echo $highlight['track_behaviour'];?>"><?php echo $highlight['chart_position'];?></span>
+			</div>
+			<div class="chart-highlight-right">
+			<span class="chart-title">
+				<a style="color: #F33747;" title="<?php echo $highlight['chart'];?>" 
+					onclick="_gaq.push(['_trackEvent', 'HomePagePromo', 'Chart2', 'France Songs']);" 						href="/charts/<?php echo $highlight['chart_link'];?>"> <?php echo $highlight['chart'];?></a>
+			</span>
+			
+			<b><?php echo $highlight['track_title'];?></b>
+			<a title="<?php echo $highlight['track_artist'];?>" href="/artist/1490043/<?php echo $highlight['track_artist'];?>"><?php echo $highlight['track_artist'];?></a>
+			</div>
+			
+			</section>
+		</div>
+	    </div>
+	    <?php endforeach;?>	
+	    <?php endif; ?>
+	    </div>	
+	    <!-- EOF : #charts-highlights-->
+	    <div class="horizontal-line"> </div>
+    	
             </div>
             <!-- EOF: #featured -->
-            
+		
             <!--#main-content -->
             <div id="main-content" class="container clearfix">
 

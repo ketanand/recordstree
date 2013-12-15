@@ -87,7 +87,7 @@ a h1:hover,a h2:hover,a h3:hover,a h4:hover,a h5:hover,a h6:hover { color: #9dce
 
 .text-align-right { text-align: right; }
 
-.img-align-left { margin: 0px 10px 10px 0; float: left; }
+.img-align-left { margin: 0px 10px 10px 0; float: left; width:320px; height:200px}
 
 img { max-width: 100%; height: auto; 
 -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -426,11 +426,11 @@ h2#site-slogan{ color: #dbdbdb; margin:0 0 16px 0; font-size: 16px; line-height:
 /* -------------------------------------------------- */
 .container { margin: 0 auto; position: relative; width: 940px; }
 
-.one-half,.one-third,.two-third,.one-fourth,.three-fourth,.one-column { /*float: left;*/ margin-right: 0px; margin-bottom: 0px; }
-
+.one-third,.two-third,.one-fourth,.three-fourth,.one-column { /*float: left;*/ margin-right: 0px; margin-bottom: 0px; }
+.one-half { float: left; margin-right: 0px; margin-bottom: 0px; }
 .one-half.last,.one-third.last,.two-third.last,.one-fourth.last,.three-fourth.last, .one-fourth.widget-4, .one-fourth.widget-8, .one-fourth.widget-12 { margin-right: 0px; }
 
-.one-half { width: 460px; }
+.one-half { width: 320px; }
 
 .one-third { width: 100%; }
 
@@ -1319,3 +1319,41 @@ text-decoration: none; border-radius: 5px 5px 0px 0; -moz-border-radius: 5px 5px
 ul.primary li.active a { background-color: #fff; border: 1px solid #bbb; border-bottom: 1px solid #fff; }
 
 ul.primary li a:hover { background-color: #eee; border-color: #ccc; border-bottom-color: #eee; }
+
+/* ---------------------------------------------------------------------- */
+/* 15- Featured Content
+/* ---------------------------------------------------------------------- */
+
+.featured { margin: 0 auto; position: relative; width : 940px }
+.featured-content { float:left; margin: 0 auto; position: relative; width: 700px; }
+
+
+
+
+/* ---------------------------------------------------------------------- */
+/* 15- Charts Highlights
+/* ---------------------------------------------------------------------- */
+
+.charts-highlights { float:left; margin: 0 auto; position: relative; width: 225px; }
+
+.portion_chart_summary { height: 80px;  width: 223px; border: 1px solid #D8D8D8; padding: 20px 0 20px; position: relative;}
+
+.portion_chart_summary p { font-size: 12px; line-height: 20px; margin-left : 10px}
+
+.chart-title { float:left; color: #FC666A; font-size: 14px; text-transform: uppercase; margin-bottom: 2px; display:block; width:100%}
+	
+.chart-title a { color: #F33747;}
+
+.portion_chart_summary p a { color: black; display:block;}
+
+.chart-highlight-left { width:auto; float:left; padding-left: 10px; padding-right:10px; padding: 20px 10px 10px;}
+
+.chart-highlight-right { width:auto; float:left; text-align:center; padding-left: 10px; padding-top:10px}
+.chart-highlight-right b { display:block; }
+.chart-highlight-right a { color: black; display:block;}
+
+.chart-highlight-left .chart-place-gain {  border: 3px solid #1A1A1A; border-radius: 45px 45px 45px 45px; display: inline-block; font-size: 22px; height: 45px; line-height: 45px; margin: 0 0 15px; position: relative; text-align: center; width: 45px; background-color: SpringGreen;}
+
+.chart-highlight-left .chart-place-loss {  border: 3px solid #1A1A1A; border-radius: 45px 45px 45px 45px; display: inline-block; font-size: 22px; height: 45px; line-height: 45px; margin: 0 0 15px; position: relative; text-align: center; width: 45px; background-color: Red;}
+
+.chart-highlight-left .chart-place-same {  border: 3px solid #1A1A1A; border-radius: 45px 45px 45px 45px; display: inline-block; font-size: 22px; height: 45px; line-height: 45px; margin: 0 0 15px; position: relative; text-align: center; width: 45px; background-color: lightBlue;}
