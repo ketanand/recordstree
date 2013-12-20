@@ -473,7 +473,7 @@ visibility: hidden; line-height: 0; height: 0; }
 
 #main-navigation ul.sf-menu li { background: transparent; }
 
-#main-navigation ul.menu li a, #main-navigation ul.sf-menu li a { color: #898989; font-family: 'Dosis', 'Verdana', sans-serif; font-size: 24px; font-weight: normal; /*padding: 37px 12px 20px 12px;*/
+#main-navigation ul.menu li a, #main-navigation ul.sf-menu li a { color: #898989; font-family: 'Dosis', 'Verdana', sans-serif; font-size: 20px; font-weight: normal; /*padding: 37px 12px 20px 12px;*/
 margin: 0 0 10px 0; position: relative; text-align: center; text-transform: uppercase; float: left; overflow: hidden; line-height: 20px; }
 
 #main-navigation ul.sf-menu li a { border: none; }
@@ -1368,3 +1368,5 @@ ul.primary li a:hover { background-color: #eee; border-color: #ccc; border-botto
 .chart-highlight-left .chart-place-loss {  border: 3px solid #1A1A1A; border-radius: 45px 45px 45px 45px; display: inline-block; font-size: 22px; height: 45px; line-height: 45px; margin: 0 0 15px; position: relative; text-align: center; width: 45px; background-color: Red;}
 
 .chart-highlight-left .chart-place-same {  border: 3px solid #1A1A1A; border-radius: 45px 45px 45px 45px; display: inline-block; font-size: 22px; height: 45px; line-height: 45px; margin: 0 0 15px; position: relative; text-align: center; width: 45px; background-color: lightBlue;}
+
+#social-icons { width:50%; float:right;}

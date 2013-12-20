@@ -296,7 +296,7 @@ $page['charts_highlights'] = array(
             <?php endif; ?>
 
             <!--#featured -->
-            <div id="featured" class="featured"> 
+            <div id="featured" class="featured container clearfix"> 
 		<div id="featured-content" class="featured-content">
                 <?php if (theme_get_setting('highlighted_display','simplecorp')): ?>
                         
